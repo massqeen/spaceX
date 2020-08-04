@@ -1,0 +1,12 @@
+//!retina media
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {}
+
+//landscape tablets <992px
+@media (max-width: 61.94em) {}
+
+//small landscape devices and tablets <768px
+@media (max-width: 47.94em) {}
+
+//extra small <576px
+@media (max-width: 35.94em) {}
