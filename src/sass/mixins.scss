@@ -1,11 +1,3 @@
-@mixin retina($x) {
-
-  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: $x),
-  (min-width: 768px) and (min-resolution: 96dpi*$x) {
-    @content;
-  }
-}
-
 @mixin for-size($size) {
 
   //576px
@@ -37,8 +29,8 @@
   }
 }
 
-@mixin font($fontfamily, $fontsize, $fontweight) {
-  font-family: $fontfamily;
+@mixin font($lineheight, $fontsize, $fontweight) {
+  line-height: $lineheight;
   font-size: $fontsize;
   font-weight: $fontweight;
 }
@@ -102,10 +94,12 @@
 }
 
 //fixed aspect ratio - needed such HTML (!include mixin in outer box):
-/*<div class="outer-box">
-    <div class="inner-box">
-    </div>
-  </div>*/
+/*
+<div class="outer-box">
+  <div class="inner-box">
+  </div>
+</div>
+*/
 @mixin aspect-ratio($width, $height) {
   position: relative;
 

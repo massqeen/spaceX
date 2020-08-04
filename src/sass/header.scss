@@ -1,1 +1,31 @@
+.header-wrapper {
+  padding-top: 5.2rem;
+  padding-bottom: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include font(14/12, 1.2rem, 400);
+}
+
+.main-nav__list, .secondary-nav__list {
+  display: flex;
+}
+
+.main-nav__link {
+  color: $main-text;
+}
+
+.main-nav__link, .secondary-nav__link{
+  cursor: pointer;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.main-nav__item:not(:last-child),.secondary-nav__item:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.secondary-nav__link {
+  color: $additional-text;
+}
 
