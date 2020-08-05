@@ -2,7 +2,7 @@ module.exports = {
   src: {
     html: 'src/*.html',
     css: 'src/sass/main.scss',
-    js: 'src/js/**/*.js',
+    js: 'src/js/*.js',
     images: 'src/images/**/*',
     fonts: 'src/fonts/**/*',
   },
@@ -23,7 +23,7 @@ module.exports = {
   inject: {
     html: 'build/index.html',
     css: 'build/css/**/*.css',
-    js: 'build/js/**/*.js',
+    js: 'build/js/*.js',
   },
   clean: 'build/',
 };
