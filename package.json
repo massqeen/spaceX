@@ -47,7 +47,6 @@
   "dependencies": {
     "angular-expressions": "^1.1.1",
     "lodash-template": "^1.0.0",
-    "lodash.template": "^4.5.0",
-    "rellax": "^1.12.1"
+    "lodash.template": "^4.5.0"
   }
 }
