@@ -1,0 +1,44 @@
+.section-overview{
+  position: relative;
+}
+
+.overview__title {
+  @include font(1.4, 2.4rem, 700);
+  text-transform: uppercase;
+  max-width: 30%;
+  margin-bottom: 4.4rem;
+}
+
+.overview__table {
+  margin-bottom: 21.8rem;
+}
+
+
+.overview__data-name {
+  text-transform: uppercase;
+  padding-right: 13rem;
+}
+
+.overview__data-name {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.overview__data-name, .overview__data-value {
+  @include font(1.8, 1.8rem, 400);
+}
+
+.am-units {
+  color: $secondary-text;
+}
+
+.overview__description {
+  @include font(29/16, 1.6rem, 400);
+  max-width: 490/1270*100%;
+}
+.rocket{
+  position: absolute;
+  top: -60rem;
+  right: 14rem;
+  z-index: 10;
+}
