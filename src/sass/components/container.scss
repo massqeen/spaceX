@@ -3,4 +3,11 @@
   padding-left: 2rem;
   padding-right: 2rem;
   margin: 0 auto;
+  @include for-size(desktop-up){
+    max-width: 90rem;
+  };
+  @include for-size(tablet-landscape){
+    max-width: 70rem;
+  };
+
 }

@@ -1,13 +1,20 @@
 @mixin for-size($size) {
 
-  //576px
+  //<568px
   @if $size==phone-only {
-    @media (max-width: 35.94em) {
+    @media (max-width: 35.44em) {
       @content;
     }
   }
 
-  //768px
+  //<672px
+  @if $size==phone-landscape {
+    @media (max-width: 41.94em) {
+      @content;
+    }
+  }
+
+  //<768px
   @else if $size==tablet {
     @media (max-width: 47.94em) {
       @content;
