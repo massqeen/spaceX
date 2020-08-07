@@ -1,8 +1,9 @@
-@import 'minireset';
+@import 'minireset.scss';
 @import 'normalize.scss';
-@import 'fonts';
+@import 'fonts.scss';
 @import 'vars.scss';
 @import 'mixins.scss';
+@import './components/aos.scss';
 @import './components/container.scss';
 
 

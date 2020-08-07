@@ -7,3 +7,4 @@ const instance = new vidbg('.vidbg-box', {
   // Attributes
 })
 const rellax = new Rellax('.rocket');
+AOS.init();
