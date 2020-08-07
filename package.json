@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://massqeen.github.io/gulp-starter-kit",
+  "homepage": "https://massqeen.github.io/spaceX",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/massqeen/gulp-starter-kit.git"
