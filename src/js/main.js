@@ -5,6 +5,15 @@ const instance = new vidbg('.vidbg-box', {
   overlay: false, // Boolean to display the overlay or not
 }, {
   // Attributes
-})
+});
 const rellax = new Rellax('.rocket');
 AOS.init();
+const navLinks = document.querySelectorAll('.active-link');
+navLinks.forEach(elem => {
+  if(elem.href == window.location.href){
+  elem.classList.add('active');
+}
+});
+
+
+

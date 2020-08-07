@@ -48,7 +48,16 @@
     font-size: 1.9rem;
   };
 }
-
+.overview__data-name--falcon,.overview__data-value--falcon{
+  @include for-size(phone-only){
+    font-size: 1.5rem;
+  };
+}
+.overview__data-name--dragon,.overview__data-value--dragon{
+  @include for-size(phone-only){
+    font-size: 1.2rem;
+  };
+}
 .am-units {
   color: $secondary-text;
 }
@@ -71,6 +80,38 @@
   };
   @include for-size(tablet-landscape){
     width: 26rem;
+  };
+  @include for-size(tablet){
+    width: 22rem;
+  };
+}
+.falcon{
+  position: absolute;
+  top: -60rem;
+  right: 1.2rem;
+  z-index: 10;
+  width: 25.2rem;
+  @include for-size(desktop-up){
+    width: 22rem;
+  };
+  @include for-size(tablet-landscape){
+    width: 20rem;
+  };
+  @include for-size(tablet){
+    width: 14rem;
+  };
+}
+.dragon{
+  position: absolute;
+  top: 40rem;
+  right: 1.2rem;
+  z-index: 10;
+  width: 50rem;
+  @include for-size(desktop-up){
+    width: 36rem;
+  };
+  @include for-size(tablet-landscape){
+    width: 28rem;
   };
   @include for-size(tablet){
     width: 22rem;

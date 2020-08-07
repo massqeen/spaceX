@@ -5,56 +5,89 @@
   justify-content: space-between;
   align-items: center;
   @include font(14/12, 1.2rem, 400);
-  @include for-size(phone-landscape){
+  @include for-size(phone-landscape) {
     flex-direction: column;
     padding-top: 3rem;
     padding-bottom: 3rem;
   };
 }
 
-.header__logo{
-  @include for-size(phone-landscape){
+.header__logo {
+  @include for-size(phone-landscape) {
     margin-bottom: 2rem;
   };
 }
-.header__main-nav{
-  @include for-size(phone-landscape){
+
+.header__main-nav {
+  @include for-size(phone-landscape) {
     margin-bottom: 2rem;
   };
 }
+
 .main-nav__list, .secondary-nav__list {
   display: flex;
 }
 
 .main-nav__link {
   color: $main-text;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -0.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0.1rem;
+    background-color: #fff;
+    transition: width 250ms ease-in-out, visibility 250ms ease-in-out;
+    visibility: hidden;
+  }
+
   @media (min-width: 35.5em) and (max-width: 41.94em) {
     font-size: 1.8rem;
   };
+
+  &:hover::after {
+    visibility: visible;
+    width: 100%;
+  }
 }
 
 .secondary-nav__link {
   color: $additional-text;
-  @include for-size(phone-landscape){
+  @include for-size(phone-landscape) {
     font-size: 1.8rem;
   };
 }
 
-.main-nav__link, .secondary-nav__link{
+.main-nav__link, .secondary-nav__link {
   cursor: pointer;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  @include for-size(phone-only){
+  @include for-size(phone-only) {
     font-size: 1.4rem;
   };
 }
 
-.main-nav__item:not(:last-child),.secondary-nav__item:not(:last-child) {
+.main-nav__item:not(:last-child), .secondary-nav__item:not(:last-child) {
   margin-right: 2rem;
-  @include for-size(phone-only){
+  @include for-size(phone-only) {
     margin-right: 1.5rem;
   };
 }
 
+.active {
+  color: $additional-text;
+  font-size: 1.8rem;
+  @media (min-width: 35.5em) and (max-width: 41.94em) {
+    font-size: 1.8rem;
+  };
+  @include for-size(phone-only) {
+    font-size: 1.4rem;
+  };
+}
 
 
