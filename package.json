@@ -15,11 +15,11 @@
     "url": "git+https://github.com/massqeen/gulp-starter-kit.git"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
     "autoprefixer": "^9.8.6",
     "browser-sync": "^2.26.13",
-    "cross-env": "^7.0.2",
+    "cross-env": "^7.0.3",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
     "gh-pages": "^2.2.0",
